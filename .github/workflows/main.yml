@@ -18,6 +18,10 @@ jobs:
         distribution: 'temurin'
         java-version: '17'
 
+    - name: Extract ZIP File
+      run: |
+        unzip -q KURDISTAN_IPTV_Android_TS_FIXED.zip
+
     - name: Build Debug APK with Gradle
       run: |
         cd KURDISTAN_IPTV_Android
